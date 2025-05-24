@@ -1,7 +1,7 @@
 import axios, { InternalAxiosRequestConfig } from 'axios';
 import { WaitlistEntry, VenueRegistration } from '../types/adminTypes';
 
-const baseURL = process.env.REACT_APP_API_URL || 'http://localhost:8000/api';
+const baseURL = process.env.REACT_APP_API_URL || 'https://pitch-backend-o5lx.onrender.com/api';
 
 const adminClient = axios.create({
   baseURL,

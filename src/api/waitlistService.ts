@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const baseURL = 'http://localhost:8000/api';
+const baseURL = 'https://pitch-backend-o5lx.onrender.com/api';
 
 export interface WaitlistFormData {
   name: string;
