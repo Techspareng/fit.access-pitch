@@ -5,17 +5,16 @@ const Footer: React.FC = () => {
   const footerLinks = {
     company: [
       { name: 'About', href: '/about' },
-      { name: 'Blog', href: '/blog' },
-      { name: 'Careers', href: '/careers' },
+
       { name: 'Contact', href: '/contact' },
     ],
     legal: [
-      { name: 'Privacy Policy', href: '/privacy' },
-      { name: 'Terms of Service', href: '/terms' },
+      { name: 'Privacy Policy', href: '/about' },
+      { name: 'Terms of Service', href: '/about' },
     ],
     partners: [
       { name: 'Become a Partner', href: '/partners' },
-      { name: 'Partner Login', href: '/partner-login' },
+      { name: 'Partner Login', href: '/partners' },
     ],
   };
 
@@ -27,7 +26,7 @@ const Footer: React.FC = () => {
           <div className="space-y-6">
             <Link to="/" className="flex items-center">
               <img
-                src="/logo-white.svg"
+                src="/fitaccesslogo.png"
                 alt="FitAccess"
                 className="h-10 w-auto"
               />
@@ -35,7 +34,7 @@ const Footer: React.FC = () => {
             <p className="text-gray-400">Your city. Your fitness. All-access.</p>
             
             {/* App Store Badges */}
-            <div className="flex space-x-4">
+            {/* <div className="flex space-x-4">
               <a href="#" className="block w-32">
                 <img
                   src="/app-store-badge.png"
@@ -50,7 +49,7 @@ const Footer: React.FC = () => {
                   className="h-10 w-auto"
                 />
               </a>
-            </div>
+            </div> */}
           </div>
 
           {/* Links Sections */}

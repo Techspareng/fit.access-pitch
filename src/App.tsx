@@ -10,12 +10,16 @@ import { Toaster } from 'react-hot-toast';
 import WaitlistPage from './pages/WaitlistPage';
 import VenuesPage from './pages/VenuesPage';
 import PartnerPage from './pages/PartnerPage';
+import About from './pages/About';
+import Contact from './pages/Contact';
 
 const AppRoutes = () => {
   return (
     <Routes>
       {/* Public routes */}
       <Route path="/" element={<Home />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/contact" element={<Contact />} />
       <Route path="/login" element={<LoginPage />} />
       <Route path="/signup" element={<SignupPage />} />
       <Route path="/waitlist" element={<WaitlistPage />} />
