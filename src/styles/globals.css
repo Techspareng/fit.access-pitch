@@ -1,0 +1,10 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* Add this if you want to disable smooth scroll for users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}

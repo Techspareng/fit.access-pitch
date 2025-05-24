@@ -1,0 +1,100 @@
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .8;
+  }
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.loading-container {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9fafb;
+  overflow: hidden;
+  z-index: 50;
+}
+
+.letter-container {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  position: relative;
+  z-index: 10;
+}
+
+.letter {
+  font-size: clamp(2rem, 8vw, 4rem);
+  font-weight: 800;
+  color: #4f46e5;
+  transition: all 0.5s ease-out;
+  padding: 0.25rem;
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.subtitle {
+  font-size: clamp(0.875rem, 3vw, 1rem);
+  text-align: center;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px) rotate(-15deg);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) rotate(0);
+  }
+}
+
+@keyframes float-1 {
+  0%, 100% { transform: translate(0, 0) rotate(0deg); }
+  50% { transform: translate(10px, -10px) rotate(5deg); }
+}
+
+@keyframes float-2 {
+  0%, 100% { transform: translate(0, 0) rotate(0deg); }
+  50% { transform: translate(-10px, -5px) rotate(-5deg); }
+}
+
+@keyframes float-3 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(5px, -15px) scale(1.1); }
+}
+
+@keyframes float-4 {
+  0%, 100% { transform: translate(0, 0) rotate(0deg); }
+  50% { transform: translate(-5px, -10px) rotate(10deg); }
+}
+
+.animate-float-1 { animation: float-1 4s ease-in-out infinite; }
+.animate-float-2 { animation: float-2 5s ease-in-out infinite; }
+.animate-float-3 { animation: float-3 6s ease-in-out infinite; }
+.animate-float-4 { animation: float-4 7s ease-in-out infinite; }
+
+@media (max-width: 640px) {
+  .loading-container {
+    padding: 0.5rem;
+  }
+  
+  .animate-pulse {
+    transform-origin: center;
+    scale: 0.8;
+  }
+
+  .letter-container {
+    gap: 0.25rem;
+  }
+}
