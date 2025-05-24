@@ -272,15 +272,15 @@ const Home: React.FC = () => {
           
                       {/* Desktop Navigation */}
                       <div className="hidden md:flex items-center space-x-8">
-                        <a href="/" className="text-white hover:text-gray-300">How It Works</a>
-                        <a href="/" className="text-white hover:text-gray-300">Venues</a>
-                        <a href="/" className="text-white hover:text-gray-300">Pricing</a>
-                        <a href="/about" className="text-white hover:text-gray-300">
+                        <Link to="/" className="text-white hover:text-gray-300">How It Works</Link>
+                        <Link to="/" className="text-white hover:text-gray-300">Venues</Link>
+                        <Link to="/" className="text-white hover:text-gray-300">Pricing</Link>
+                        <Link to="/about" className="text-white hover:text-gray-300">
                              About Us
-                          </a>
-                          <a href="/contact" className="text-white hover:text-gray-300">
+                          </Link>
+                          <Link to="/contact" className="text-white hover:text-gray-300">
                              Contact Us
-                             </a>
+                             </Link>
                         <motion.button
                           whileHover={{ scale: 1.05 }}
                           whileTap={{ scale: 0.95 }}
@@ -315,15 +315,15 @@ const Home: React.FC = () => {
                     className={`${isMobileMenuOpen ? 'block' : 'hidden'} md:hidden bg-indigo-600`}
                   >
                     <div className="px-2 pt-2 pb-3 space-y-1">
-                      <a href="/" className="block px-3 py-2 text-white">How It Works</a>
-                      <a href="/" className="block px-3 py-2 text-white">Venues</a>
-                      <a href="/" className="block px-3 py-2 text-white">Pricing</a>
-                         <a href="/about" className="block px-3 py-2 text-white">
+                      <Link to="/" className="block px-3 py-2 text-white">How It Works</Link>
+                      <Link to="/" className="block px-3 py-2 text-white">Venues</Link>
+                      <Link to="/" className="block px-3 py-2 text-white">Pricing</Link>
+                         <Link to="/about" className="block px-3 py-2 text-white">
                          About Us
-                         </a>
-                         <a href="/contact" className="block px-3 py-2 text-white">
+                         </Link>
+                         <Link to="/contact" className="block px-3 py-2 text-white">
                          Contact Us
-                         </a>
+                         </Link>
                       <button
                         onClick={() => handleNavigation('/waitlist')}
                         className="block w-full text-left px-3 py-2 text-white"
