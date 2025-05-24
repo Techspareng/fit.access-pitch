@@ -24,11 +24,15 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Brand Section */}
           <div className="space-y-6">
-            <Link to="/" className="flex items-center">
+            <Link to="/" className="inline-block">
               <img
                 src="/fitaccesslogo.png"
                 alt="FitAccess"
-                className="h-10 w-auto"
+                className="h-8 sm:h-10 md:h-12 w-auto object-contain transition-transform hover:scale-105"
+                style={{
+                  maxWidth: '180px',
+                  minWidth: '120px'
+                }}
               />
             </Link>
             <p className="text-gray-400">Your city. Your fitness. All-access.</p>

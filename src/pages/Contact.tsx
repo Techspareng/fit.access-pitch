@@ -6,10 +6,12 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
+
+
 const Contact: React.FC = () => {
   const contactInfo = {
     address: "Off Constitution Ave, Central Business District, Abuja 900103, Federal Capital Territory  ",
-    whatsapp: "+234 8086947120",
+    whatsapp: "+234 9056957089",
     instagram: "@fit.access_ng",
     twitter: "@fit.access_ng",
     tiktok: "@fit.access_ng"
@@ -64,6 +66,12 @@ const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
                    <a href="/" className="text-white hover:text-gray-300">How It Works</a>
                    <a href="/" className="text-white hover:text-gray-300">Venues</a>
                    <a href="/" className="text-white hover:text-gray-300">Pricing</a>
+                   <a href="/about" className="text-white hover:text-gray-300">
+                        About Us
+                     </a>
+                     <a href="/contact" className="text-white hover:text-gray-300">
+                        Contact Us
+                        </a>
                    <motion.button
                      whileHover={{ scale: 1.05 }}
                      whileTap={{ scale: 0.95 }}
@@ -101,6 +109,12 @@ const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
                  <a href="/" className="block px-3 py-2 text-white">How It Works</a>
                  <a href="/" className="block px-3 py-2 text-white">Venues</a>
                  <a href="/" className="block px-3 py-2 text-white">Pricing</a>
+                    <a href="/about" className="block px-3 py-2 text-white">
+                    About Us
+                    </a>
+                    <a href="/contact" className="block px-3 py-2 text-white">
+                    Contact Us
+                    </a>
                  <button
                    onClick={() => handleNavigation('/waitlist')}
                    className="block w-full text-left px-3 py-2 text-white"
