@@ -6,8 +6,6 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
-
-
 const Contact: React.FC = () => {
   const contactInfo = {
     address: "Off Constitution Ave, Central Business District, Abuja 900103, Federal Capital Territory  ",
