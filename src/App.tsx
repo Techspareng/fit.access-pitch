@@ -18,8 +18,8 @@ const AppRoutes = () => {
     <Routes>
       {/* Public routes */}
       <Route path="/" element={<Home />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/contact" element={<Contact />} />
+      <Route path="about" element={<About />} /> {/* Remove leading slash */}
+      <Route path="contact" element={<Contact />} /> {/* Remove leading slash */}
       <Route path="/login" element={<LoginPage />} />
       <Route path="/signup" element={<SignupPage />} />
       <Route path="/waitlist" element={<WaitlistPage />} />

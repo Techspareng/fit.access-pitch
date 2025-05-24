@@ -152,7 +152,7 @@ const WaitlistPage = () => {
                   </div>
                 </motion.div>
               </nav>
-              
+
       
       {/* Decorative Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
